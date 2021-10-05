@@ -10,14 +10,39 @@
 
 <body onload="init()">
     <h1>Mine Sweeper!</h1>
+
+    <button class="smile" onclick="restartGame()"> 😊 </button>
+    
+    <p>Choose Your Level:</p>
+    <button class="btn" onclick="setLevel(4,2)">Beginner</button>
+    <button class="btn" onclick="setLevel(8,12)">Medium</button>
+    <button class="btn" onclick="setLevel(12,30)">Expert</button>
+
+    <br>
+
+   <span class="lives">Number of Lives: 3 </span>
+
+   <div class="boom">
+       <h2>Oops you stepped on a bomb...</h2>
+    </div>
+
     <div class="seconds-counter">Game Time: <span class="time">0</span> seconds</div>
-    <table border="1" cellpadding="10">
+   
+    <table id="table" border="1" cellpadding="10">
         <tbody class="board">
 
         </tbody>
     </table>
 
+    <div class="modal">
+        <h2>Game Over</h2>
+    </div>
+
+    <div class="victory">
+        <h2>you win!!! </h2>
+    </div>
+ 
     <script src="js/util.js"> </script>
-    <script src="js/main.js"> </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
