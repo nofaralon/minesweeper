@@ -12,33 +12,37 @@
     <h1>Mine Sweeper!</h1>
 
     <button class="smile" onclick="restartGame()"> 😊 </button>
+    <br>
     
-    <p>Choose Your Level:</p>
+    <p class="font-style">Choose Your Level:</p>
+    <br>
     <button class="btn" onclick="setLevel(4,2)">Beginner</button>
     <button class="btn" onclick="setLevel(8,12)">Medium</button>
     <button class="btn" onclick="setLevel(12,30)">Expert</button>
 
     <br>
 
-   <span class="lives">Number of Lives: 3 </span>
+   <span class="lives font-style">Number of Lives: 3 </span>
 
-   <div class="boom">
-       <h2>Oops you stepped on a bomb...</h2>
+
+    <div class="font-style">Game Time: <span class="time">0</span> seconds</div>
+    <br>
+    <div class="modal">
+        <h2>Game Over</h2>
     </div>
+    <div class="boom">
+        <h2>Oops you stepped on a bomb...</h2>
+     </div>
 
-    <div class="seconds-counter">Game Time: <span class="time">0</span> seconds</div>
-   
-    <table id="table" border="1" cellpadding="10">
+    <table id="table" border="1" backgroundcolor= "black" cellpadding="10">
         <tbody class="board">
 
         </tbody>
     </table>
 
-    <div class="modal">
-        <h2>Game Over</h2>
-    </div>
+    <button class="btn" onclick="openSafecell()">Safe Click</button>
 
-    <div class="victory">
+    <div class="modal victory">
         <h2>you win!!! </h2>
     </div>
  
